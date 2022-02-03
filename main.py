@@ -15,8 +15,7 @@ browser = webdriver.Chrome()
 browser.get('https://localhost:44367/Trees/Create')
 
 for i in df.iterrows():
-    # check if it is in the database somehow
-    # maybe dont, just gonna get an error page if it is
+    
     dis = i.__getitem__(1)
     if (dis[1] == 'nan') & (dis[2] == 'nan') & (dis[3] == 'nan'):
         continue
@@ -41,8 +40,8 @@ for i in df.iterrows():
                 browser.get('https://localhost:44367/Locations/Create')
                 new_loc = browser.find_element(By.ID, "Location_LocationName")
                 new_loc.send_keys(dis[1])
-                enter = browser.find_element(By.ID, "ENTER")
-                enter.send_keys(Keys.ENTER)
+                enter1 = browser.find_element(By.ID, "ENTER")
+                ActionChains(browser).click(enter1).perform()
                 browser.get('https://localhost:44367/Trees/Create')
             else:
                 ARROW_DOWN = u'\ue015'
@@ -60,8 +59,8 @@ for i in df.iterrows():
                 browser.get('https://localhost:44367/Scientific/Create')
                 new_name = browser.find_element(By.ID, "Scientific_ScientificName")
                 new_name.send_keys(dis[5])
-                enter = browser.find_element(By.ID, "ENTER")
-                enter.send_keys(Keys.ENTER)
+                enter2 = browser.find_element(By.ID, "ENTER")
+                ActionChains(browser).click(enter2).perform()
                 browser.get('https://localhost:44367/Trees/Create')
             else:
                 ARROW_DOWN = u'\ue015'
