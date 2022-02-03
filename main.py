@@ -1,5 +1,6 @@
 import pandas as pd
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -40,7 +41,7 @@ for i in df.iterrows():
                 browser.get('https://localhost:44367/Locations/Create')
                 new_loc = browser.find_element(By.ID, "Location_LocationName")
                 new_loc.send_keys(dis[1])
-                enter = browser.find_element(By.CLASS_NAME, "btn btn-primary")
+                enter = browser.find_element(By.ID, "ENTER")
                 enter.send_keys(Keys.ENTER)
                 browser.get('https://localhost:44367/Trees/Create')
             else:
@@ -59,7 +60,7 @@ for i in df.iterrows():
                 browser.get('https://localhost:44367/Scientific/Create')
                 new_name = browser.find_element(By.ID, "Scientific_ScientificName")
                 new_name.send_keys(dis[5])
-                enter = browser.find_element(By.CLASS_NAME, "btn btn-primary")
+                enter = browser.find_element(By.ID, "ENTER")
                 enter.send_keys(Keys.ENTER)
                 browser.get('https://localhost:44367/Trees/Create')
             else:
@@ -87,20 +88,8 @@ for i in df.iterrows():
             tree_com = browser.find_element(By.ID, "Tree_Comment")
             tree_com.send_keys(dis[10])
 
-        enter = browser.find_element(By.CLASS_NAME, "btn btn-primary")
-        enter.click()
+        enter = browser.find_element(By.ID, "ENTER")
+        ActionChains(browser).click(enter).perform()
+
         if dis[0] == 1:
             break
-
-# browser.get('https://localhost:44367/Specialties')
-
-# maybe come up with a way to do specialties
-
-# Add cat:
-# <input type="button" onclick="AddCat()" value="+">
-
-# then becomes a dropdown
-# <select class="form-control valid" id="SpecialtyTrees_0__SpecialtyTitle" name="SpecialtyTrees[0].SpecialtyTitle" aria-invalid="false"><option value=""></option><option value="Old">Old</option></select>
-
-# Enter button:
-# <input type="submit" value="Create" class="btn btn-primary">
