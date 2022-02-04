@@ -17,7 +17,7 @@ for i in df.iterrows():
     browser.get('https://localhost:44367/Trees/Create')
     browser.refresh()
     dis = i.__getitem__(1)
-    if (dis[1] == 'nan') & (dis[2] == 'nan') & (dis[3] == 'nan'):
+    if (not isinstance(dis[1], float)) & (not isinstance(dis[2], float)) & (not isinstance(dis[3], float)):
         continue
     else:
         tree_id = browser.find_element(By.ID, "Tree_TreeID")
@@ -63,24 +63,20 @@ for i in df.iterrows():
                 ARROW_DOWN = u'\ue015'
                 name.send_keys(ARROW_DOWN)
                 count += 1
-        if dis[6] != 'nan':
+        if not isinstance(dis[6], float):
             tree_dbh = browser.find_element(By.ID, "Tree_DBH")
             tree_dbh.send_keys(dis[6])
-        if dis[7] != 'nan':
+        if not isinstance(dis[7], float):
             tree_hgt = browser.find_element(By.ID, "Tree_Height")
             tree_hgt.send_keys(dis[7])
-        if dis[8] != 'nan':
+        if not isinstance(dis[8], float):
             tree_haz = browser.find_element(By.ID, "Tree_Hazard")
             tree_haz.send_keys(dis[8])
-        if dis[9] != 'nan':
+        if not isinstance(dis[9], float):
             tree_cond = browser.find_element(By.ID, "Tree_Condition")
             tree_cond.send_keys(dis[9])
-        if dis[10] != 'nan':
+        if not isinstance(dis[10], float):
             tree_com = browser.find_element(By.ID, "Tree_Comment")
             tree_com.send_keys(dis[10])
         enter = browser.find_element(By.ID, "ENTER")
         ActionChains(browser).click(enter).perform()
-        # don't need to add a wait after the click
-        # need to fix the nan problem
-        if dis[0] == 2:
-            break
