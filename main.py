@@ -6,11 +6,12 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 
-# data2 = pd.read_excel(r"C:\Users\Kaden's Laptop\PycharmProjects\DataEntry\Tree_Data.xlsx", sheet_name='3000-5000')
-# df = pd.DataFrame(data2, columns=['ID', 'Location', 'Latitude', 'Longitude', 'Common name', 'Scientific name', 'DBH', 'Ht', 'HAZ ', 'Cond.', 'Comments'])
+data2 = pd.read_excel(r"C:\Users\Kaden's Laptop\PycharmProjects\DataEntry\Tree_Data.xlsx", sheet_name='3000-5000')
+df = pd.DataFrame(data2, columns=['ID', 'Location', 'Latitude', 'Longitude', 'Common name', 'Scientific name', 'DBH', 'Ht', 'HAZ ', 'Cond.', 'Comments'])
 
-data1 = pd.read_excel(r"C:\Users\Kaden's Laptop\PycharmProjects\DataEntry\Tree_Data.xlsx", sheet_name='1-1150')
-df = pd.DataFrame(data1, columns=['ID', 'Location', 'Latitude', 'Longitude', 'Common name', 'Scientific name', 'DBH', 'Ht', 'HAZ ', 'Cond.', 'Comments'])
+# data1 = pd.read_excel(r"C:\Users\Kaden's Laptop\PycharmProjects\DataEntry\Tree_Data.xlsx", sheet_name='1-1150')
+# df = pd.DataFrame(data1, columns=['ID', 'Location', 'Latitude', 'Longitude', 'Common name', 'Scientific name', 'DBH', 'Ht', 'HAZ ', 'Cond.', 'Comments'])
+
 browser = webdriver.Chrome()
 
 for i in df.iterrows():
@@ -125,5 +126,3 @@ for i in df.iterrows():
             tree_com.send_keys(dis[10])
         enter = browser.find_element(By.ID, "ENTER")
         ActionChains(browser).click(enter).perform()
-        if dis[0] == 2:
-            break
