@@ -54,6 +54,15 @@ for row in rows:
     for option in sel_spec.options:
         if option.text == sci_to_cat(tree_id.text):
             spec.send_keys(Keys.ENTER)
+            # only uncomment when everything else works
+
+            # add_cat = crud_row.find_elements(By.CLASS_NAME, "btn-primary")[0]
+            # ActionChains(new).click(add_cat).perform()
+            # new.refresh()
+            # add_cat = crud_row.find_elements(By.TAG_NAME, "btn btn-primary")[0]
+            # ActionChains(new).click(add_cat).perform()
+            # new.close()
+            # close new and run next iteration of loop
             break
         if count == len(sel_spec.options):
             print("whoops messed something up @ " + tree_id.text)
@@ -64,10 +73,4 @@ for row in rows:
             spec.send_keys(ARROW_DOWN)
             count += 1
     print("did i do everything?")
-    # only uncomment when everything else works
 
-    # add_cat = crud_row.find_elements(By.CLASS_NAME, "btn-primary")[0]
-    # ActionChains(browser).click(add_cat).perform()
-    # browser.refresh()
-    # add_cat = crud_row.find_elements(By.TAG_NAME, "btn btn-primary")[0]
-    # ActionChains(browser).click(add_cat).perform()
