@@ -1,0 +1,79 @@
+Pines :
+	Pinus taeda L.
+	Pinus echinata Mill.
+	
+Oaks :
+	Quercus phellos L.
+	Quercus mulenbergii Engelm.
+	Quercus macrocarpa Michx..
+	Quercus macrocarpa Michx.
+	Quercus shumardii Buckley
+	Quercus falcata Michx.
+	Quercus palustris Munchh.
+	Quercus pagoda Raf.
+	Quercus nigra L.
+	Quercus lyrata Walter
+	Quercus michauxii Nutt.
+	Quercus laurifolia Michx.
+	Quercus acutissima Carruthers
+	Quercus stellata Wangenh.
+	Quercus imbricaria Michx.
+	Quercus texana Buckley
+	Quercus alba L.
+	Quercus acerifolia (E.J. Palmer) Stoynoff & W.J. Hess
+	Quercus x warei 'Long' REGAL PRINCE
+	Quercus robur  'Fastigiata'
+	Quercus rubra L.
+	Quercus
+
+Crapemyrtles :
+	Lagerstroemia sp.
+	Lagerstroemia indica 'Tuscarora'
+	Lagerstroemia indica var. 'Natchez'
+	
+Hollies :
+	Ilex sp.
+	Ilex opaca Aiton
+	Ilex vomitoria Aiton
+	Ilex x 'Nellie R. Stevens'
+	Ilex x attenuata 'Fosteri'
+	Ilex x attenuata 'Savannah'
+	Ilex x 'Sparkleberry'
+	Ilex decidua  Walter
+	Ilex x 'Mary Nell'
+	Ilex cornuta  'Burfordii'
+	Ilex cornuta 'Needlepoint'
+	
+Maples :
+	Acer
+	Acer rubrum L.
+	Acer rubrum L. 'October Glory'
+	Acer saccharum Mitchell
+	Acer saccharum Marshall
+	Acer saccharinum L.
+	Acer tataricum subsp. ginnala 'Flame'
+	Acer rubrum 'Franksred'
+	Acer palmatum Thunb.
+	Acer griseum (Franch.) Pax
+	Acer rubrum L. 'Autumn Flame'
+	Acer buergerianum
+	Quercus acerifolia (E.J. Palmer) Stoynoff & W.J. Hess *
+
+Sweetgums :
+	Liquidambar styraciflua L.
+	Liquidambar styraciflua L. 'Slender Silhouette'
+
+Pecans :
+	Carya illinoinensis (Wangenh.) K. Koch
+	Carya cordiformis (Wangenh.) K. Koch.
+	Carya ovata (Mill.) K. Koch.
+	Carya laciniosa
+	
+Trees with Plaques:
+	24, 28,	51,	116, 128, 152, 252, 264, 308, 314, 323, 345, 350, 358, 365, 366, 373, 393, 412, 442, 455, 460, 467, 482, 494, 705
+	
+Memorial trees:
+	41, 85, 141, 167, 337, 340, 359, 413, 418, 486, 739, 872
+	
+Oldest n rarest:
+	TBD
