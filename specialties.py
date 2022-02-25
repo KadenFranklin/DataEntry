@@ -33,7 +33,7 @@ rows = table_id.find_elements(By.TAG_NAME, "tr")
 for row in rows:
     tree_id = row.find_elements(By.TAG_NAME, "td")[0]
     sci_name = row.find_elements(By.TAG_NAME, "td")[9]
-    if sci_to_cat(sci_name) == 'Skip':
+    if sci_to_cat(sci_name.text) == 'Skip':
         continue
     else:
         new = webdriver.Chrome()
