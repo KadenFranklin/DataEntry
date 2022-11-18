@@ -1,4 +1,4 @@
 DataEntry
 
 - to seed the database for :
-https://github.com/DaltonCompSci/Hendrix-Arboretum-Website
+https://hendrix-arboretum.azurewebsites.net/
